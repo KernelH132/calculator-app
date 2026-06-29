@@ -1,4 +1,4 @@
-# Simple Calculator
+# Scientific Calculator
 
 A mobile Android application developed in **Kotlin** and **XML**.
 

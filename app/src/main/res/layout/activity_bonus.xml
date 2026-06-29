@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#090D16"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- STATS SECTION CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#111622"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📊  STATISTICAL COMPUTATIONS"
+                android:textColor="#3FB950"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etStatsInput"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:background="#1C2128"
+                android:hint="e.g. 10, 25, 30, 42"
+                android:paddingHorizontal="12dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#6E7681" />
+
+            <Button
+                android:id="@+id/btnCalcStats"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:backgroundTint="#238636"
+                android:text="Calculate Mean, Median &amp; Std Dev"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
+
+            <TextView
+                android:id="@+id/tvStatsResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="#E6EDF3"
+                android:textSize="15sp"
+                android:typeface="monospace" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- MATRIX SECTION CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#111622"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🧮  2x2 MATRIX DETERMINANT"
+                android:textColor="#A371F7"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:columnCount="2">
+
+                <EditText android:id="@+id/m00" android:layout_width="90dp" android:layout_height="50dp" android:layout_margin="4dp" android:background="#1C2128" android:gravity="center" android:hint="[0,0]" android:inputType="numberDecimal|numberSigned" android:textColor="#FFF" android:textColorHint="#6E7681"/>
+                <EditText android:id="@+id/m01" android:layout_width="90dp" android:layout_height="50dp" android:layout_margin="4dp" android:background="#1C2128" android:gravity="center" android:hint="[0,1]" android:inputType="numberDecimal|numberSigned" android:textColor="#FFF" android:textColorHint="#6E7681"/>
+                <EditText android:id="@+id/m10" android:layout_width="90dp" android:layout_height="50dp" android:layout_margin="4dp" android:background="#1C2128" android:gravity="center" android:hint="[1,0]" android:inputType="numberDecimal|numberSigned" android:textColor="#FFF" android:textColorHint="#6E7681"/>
+                <EditText android:id="@+id/m11" android:layout_width="90dp" android:layout_height="50dp" android:layout_margin="4dp" android:background="#1C2128" android:gravity="center" android:hint="[1,1]" android:inputType="numberDecimal|numberSigned" android:textColor="#FFF" android:textColorHint="#6E7681"/>
+            </GridLayout>
+
+            <Button
+                android:id="@+id/btnMatrixCalc"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#8957E5"
+                android:text="Calculate Determinant (Δ)"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:cornerRadius="10dp" />
+
+            <TextView
+                android:id="@+id/tvMatrixResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="center"
+                android:textColor="#F0F6FC"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
